@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="CSNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DCSGBackground" translatesAutoresizingMaskIntoConstraints="NO" id="D59-yo-GBF">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DCSGLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kMA-i0-KAe">
+                                <rect key="frame" x="447" y="24" width="130" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XF7-d6-OrC"/>
+                                    <constraint firstAttribute="width" constant="130" id="seJ-Vu-tnE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DCSG School Navigation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0E-l1-Vp8">
+                                <rect key="frame" x="20" y="116" width="984" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bng-SQ-zKX">
+                                <rect key="frame" x="15" y="1281" width="994" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.61572597789115646" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Find Your Location">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Nxn-s4-QXI" kind="presentation" modalPresentationStyle="fullScreen" id="CRy-4K-bby"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D59-yo-GBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5OP-KL-7ls"/>
+                            <constraint firstItem="Bng-SQ-zKX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5V2-yR-oqc"/>
+                            <constraint firstItem="kMA-i0-KAe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5aN-95-Xfx"/>
+                            <constraint firstItem="kMA-i0-KAe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ezc-Y8-SmG"/>
+                            <constraint firstItem="D59-yo-GBF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ped-db-zcl"/>
+                            <constraint firstItem="Y0E-l1-Vp8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QUd-iu-ZQ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y0E-l1-Vp8" secondAttribute="trailing" constant="20" id="XuT-YQ-obc"/>
+                            <constraint firstItem="D59-yo-GBF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dmy-T7-foe"/>
+                            <constraint firstAttribute="bottom" secondItem="D59-yo-GBF" secondAttribute="bottom" id="eUu-Vr-mkA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bng-SQ-zKX" secondAttribute="bottom" constant="10" id="fwy-qQ-Gxp"/>
+                            <constraint firstItem="Y0E-l1-Vp8" firstAttribute="top" secondItem="kMA-i0-KAe" secondAttribute="bottom" constant="32" id="lRn-V5-c5C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bng-SQ-zKX" secondAttribute="trailing" constant="15" id="mkp-c0-a2r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="-62"/>
+        </scene>
+        <!--Floor MapVC-->
+        <scene sceneID="rFn-gw-xgy">
+            <objects>
+                <viewController id="GyH-9N-YmH" customClass="FloorMapVC" customModule="CSNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NwC-G4-XuA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DCSGBackground" translatesAutoresizingMaskIntoConstraints="NO" id="RSm-Qu-aCX">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DCSGLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NfK-dC-AVC">
+                                <rect key="frame" x="447" y="0.0" width="130" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Geo-pM-JXv"/>
+                                    <constraint firstAttribute="height" constant="60" id="kMw-oy-E6E"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floor Map" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okg-eJ-HVZ">
+                                <rect key="frame" x="20" y="76" width="984" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-rk-gtk">
+                                <rect key="frame" x="0.0" y="10" width="45" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="mvg-VV-Ux3"/>
+                                    <constraint firstAttribute="width" constant="45" id="ut4-Ei-rsf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton"/>
+                                <connections>
+                                    <segue destination="yW9-7T-y9O" kind="unwind" unwindAction="unwindFromFloorMapVCWithUnwindSegue:" id="28V-QZ-G9I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PNq-yk-eqv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Okg-eJ-HVZ" firstAttribute="top" secondItem="NfK-dC-AVC" secondAttribute="bottom" constant="16" id="1Dr-N4-cl9"/>
+                            <constraint firstItem="RSm-Qu-aCX" firstAttribute="top" secondItem="NwC-G4-XuA" secondAttribute="top" id="50u-qJ-kgJ"/>
+                            <constraint firstItem="RSm-Qu-aCX" firstAttribute="trailing" secondItem="PNq-yk-eqv" secondAttribute="trailing" id="8lk-YF-FvD"/>
+                            <constraint firstAttribute="bottom" secondItem="RSm-Qu-aCX" secondAttribute="bottom" id="a51-pg-GKk"/>
+                            <constraint firstItem="MDP-rk-gtk" firstAttribute="top" secondItem="PNq-yk-eqv" secondAttribute="top" constant="10" id="e9e-Or-gbV"/>
+                            <constraint firstItem="Okg-eJ-HVZ" firstAttribute="leading" secondItem="PNq-yk-eqv" secondAttribute="leading" constant="20" id="fxQ-J9-GZ8"/>
+                            <constraint firstItem="NfK-dC-AVC" firstAttribute="centerX" secondItem="NwC-G4-XuA" secondAttribute="centerX" id="iJS-VQ-Okz"/>
+                            <constraint firstItem="NfK-dC-AVC" firstAttribute="top" secondItem="PNq-yk-eqv" secondAttribute="top" id="qc6-gc-AZj"/>
+                            <constraint firstItem="MDP-rk-gtk" firstAttribute="leading" secondItem="PNq-yk-eqv" secondAttribute="leading" id="sFi-SV-dYb"/>
+                            <constraint firstItem="PNq-yk-eqv" firstAttribute="trailing" secondItem="Okg-eJ-HVZ" secondAttribute="trailing" constant="20" id="t17-L3-XBJ"/>
+                            <constraint firstItem="RSm-Qu-aCX" firstAttribute="leading" secondItem="PNq-yk-eqv" secondAttribute="leading" id="xaG-2F-2hY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjO-oz-Wn0" sceneMemberID="firstResponder"/>
+                <exit id="yW9-7T-y9O" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="912.55813953488371" y="-62.446351931330476"/>
+        </scene>
+        <!--TypeVC-->
+        <scene sceneID="U7E-zS-LsQ">
+            <objects>
+                <viewController id="Nxn-s4-QXI" customClass="TypeVC" customModule="CSNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dtr-Ix-gDk">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DCSGBackground" translatesAutoresizingMaskIntoConstraints="NO" id="iRB-AZ-aUB">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DCSGLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FvO-xc-Xjd">
+                                <rect key="frame" x="447" y="0.0" width="130" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="CCo-bf-HIB"/>
+                                    <constraint firstAttribute="height" constant="60" id="zhc-O4-53z"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rjx-8Q-G52">
+                                <rect key="frame" x="15" y="160" width="994" height="225.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe0-OY-f53">
+                                        <rect key="frame" x="0.0" y="0.0" width="994" height="48.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.61572597790000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Floor Map">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="GyH-9N-YmH" kind="presentation" modalPresentationStyle="fullScreen" id="9pu-Fq-KoO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-kk-9OX">
+                                        <rect key="frame" x="0.0" y="88.5" width="994" height="48.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.61572597790000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Find Your Classroom">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1od-r0-ry7">
+                                        <rect key="frame" x="0.0" y="177" width="994" height="48.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.61572597790000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Find A Staff Room">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="riv-Er-kki"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iRB-AZ-aUB" secondAttribute="bottom" id="5WM-jp-izg"/>
+                            <constraint firstItem="rjx-8Q-G52" firstAttribute="top" secondItem="FvO-xc-Xjd" secondAttribute="bottom" constant="100" id="DWW-gO-u9e"/>
+                            <constraint firstItem="rjx-8Q-G52" firstAttribute="leading" secondItem="riv-Er-kki" secondAttribute="leading" constant="15" id="Pc0-SS-BSd"/>
+                            <constraint firstItem="iRB-AZ-aUB" firstAttribute="leading" secondItem="riv-Er-kki" secondAttribute="leading" id="h5K-mu-muf"/>
+                            <constraint firstItem="iRB-AZ-aUB" firstAttribute="top" secondItem="dtr-Ix-gDk" secondAttribute="top" id="qT5-gb-R32"/>
+                            <constraint firstItem="FvO-xc-Xjd" firstAttribute="centerX" secondItem="dtr-Ix-gDk" secondAttribute="centerX" id="rjJ-y1-8pw"/>
+                            <constraint firstItem="riv-Er-kki" firstAttribute="trailing" secondItem="rjx-8Q-G52" secondAttribute="trailing" constant="15" id="tvu-es-4xY"/>
+                            <constraint firstItem="FvO-xc-Xjd" firstAttribute="top" secondItem="riv-Er-kki" secondAttribute="top" id="uS4-NF-2Mf"/>
+                            <constraint firstItem="iRB-AZ-aUB" firstAttribute="trailing" secondItem="riv-Er-kki" secondAttribute="trailing" id="ycx-UI-R5H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Soa-8h-OV4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioo-ek-SSo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DCSGBackground" width="366.5" height="200"/>
+        <image name="DCSGLogo" width="208" height="208"/>
+        <image name="backButton" width="29" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
