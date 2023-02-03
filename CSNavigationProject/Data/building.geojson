@@ -1,0 +1,14 @@
+{
+    "name": "building",
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "feature_type": "building",
+            "geometry": null,
+            "id": "SS",
+            "properties": {
+                "address_id": "address_alpha"
+            }
+        }
+    ]
+}

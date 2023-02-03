@@ -1,0 +1,21 @@
+{
+    "name": "address",
+    "type": "MultiPolygon",
+    "features": [
+        "type": "Feature",
+        {
+            "feature_type": "address",
+            "geometry": null,
+            "id": "adress_alpha",
+            "properties": {
+                "address": "71 Bukit Batok W Ave 8",
+                "country": "SG",
+                "locality": "Singapore",
+                "postal_code": "658966",
+                "postal_code_ext": null.
+                "province": "West Region - Bukit Batok West",
+                "unit": null
+            }
+        }
+    ]
+}

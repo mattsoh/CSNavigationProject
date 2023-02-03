@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>PA1-01 (Art)</string>
+		<key>BuildingCode</key>
+		<string>PA</string>
+		<key>Type</key>
+		<string>Department Office</string>
+		<key>Latitude</key>
+		<string>1.31572</string>
+		<key>Longitude</key>
+		<string>103.80396</string>
+		<key>Floor</key>
+		<string>1</string>
+		<key>ClassroomCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>SS1-11</string>
+		<key>BuildingCode</key>
+		<string>SS</string>
+		<key>Type</key>
+		<string>Math Classroom</string>
+		<key>Latitude</key>
+		<string>1.31572</string>
+		<key>Longitude</key>
+		<string>103.80396</string>
+		<key>Floor</key>
+		<string>1</string>
+		<key>ClassroomCode</key>
+		<string>11</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>SS1-08</string>
+		<key>BuildingCode</key>
+		<string>SS</string>
+		<key>Type</key>
+		<string>Math Classroom</string>
+		<key>Latitude</key>
+		<string>1.31572</string>
+		<key>Longitude</key>
+		<string>103.80396</string>
+		<key>Floor</key>
+		<string>1</string>
+		<key>ClassroomCode</key>
+		<string>08</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>SS1-09</string>
+		<key>Type</key>
+		<string>Math Classroom</string>
+		<key>Latitude</key>
+		<real>1.31625</real>
+		<key>Longitude</key>
+		<real>103.80315</real>
+		<key>BuildingCode</key>
+		<string>SS</string>
+		<key>Floor</key>
+		<string>2</string>
+		<key>ClassroomCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>SS1-01</string>
+		<key>BuildingCode</key>
+		<string>SS</string>
+		<key>Type</key>
+		<string>Math Classroom</string>
+		<key>Latitude</key>
+		<string>1.31572</string>
+		<key>Longitude</key>
+		<string>103.80396</string>
+		<key>Floor</key>
+		<string>1</string>
+		<key>ClassroomCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>SS1-10</string>
+		<key>BuildingCode</key>
+		<string>SS</string>
+		<key>Type</key>
+		<string>Math Classroom</string>
+		<key>Latitude</key>
+		<string>1.31572</string>
+		<key>Longitude</key>
+		<string>103.80396</string>
+		<key>Floor</key>
+		<string>1</string>
+		<key>ClassroomCode</key>
+		<string>10</string>
+	</dict>
+</array>
+</plist>
